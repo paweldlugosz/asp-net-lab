@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NewBrandingStyle.Web.Models.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -10,5 +11,6 @@ namespace NewBrandingStyle.Web.Models
         public int NumberOfCharsInName { get; set; }
         public int NumberOfCharsInDescription { get; set; }
         public bool isHidden { get; set; }
+        public List<ItemEntity> Items { get; set; }
     }
 }

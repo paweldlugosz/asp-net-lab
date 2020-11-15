@@ -8,3 +8,13 @@
 <div>Chars in name: @Model.NumberOfCharsInName</div>
 <div>Chars in description: @Model.NumberOfCharsInDescription</div>
 <div>Is company currenty hidden: @(Model.isHidden ? "Yes" : "No")</div>
+
+
+<h2>Company list:</h2>
+
+<ul>
+    @foreach (var item in Model.Items)
+    {
+    <li>Name: @item.Name  Description: @item.Description Visible: @(item.isVisible ? "Yes" : "No")</li>
+    }
+</ul>
